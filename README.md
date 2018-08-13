@@ -4,7 +4,7 @@ Project 4 - [Front-End Web Developer Nano Degree with Udacity & Google](https://
 
 ## Project overview
 
-* Memory Game is a browser-based card matching game.
+Memory Game is a browser-based card matching game.
 
 ### How to play
 
@@ -29,7 +29,7 @@ When The game ends, a modal pops up with game stats:
    * the option to replay game or close modal
 
 ## Getting Started
-* [Play online]()     todo
+* [Play online](https://rawgit.com/iris-anghel/Memory-Game/master/index.html)
 * Clone or download this repository. Open the `index.html` file in the browser of your choice.
 
 ## Dependencies
@@ -38,10 +38,7 @@ When The game ends, a modal pops up with game stats:
    * [FontAwesome](https://fontawesome.com/)
    * [Coda font from Google Fonts](https://fonts.google.com/specimen/Coda)
 
-
-![matching-game](https://user-images.githubusercontent.com/18640359/38749371-0ea5a474-3f5a-11e8-8ea9-bbf2b22716ef.PNG)            todo 
-
-
+![matching-game](https://user-images.githubusercontent.com/18640359/38749371-0ea5a474-3f5a-11e8-8ea9-bbf2b22716ef.PNG)
 
 ### Sources:
 
