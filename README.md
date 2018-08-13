@@ -1,6 +1,6 @@
 # Memory Game
 
-Project 4 - [Front-End Web Developer Nano Degree with Udacity & Google](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001)
+Project 3 - [Front-End Web Developer Nano Degree with Udacity & Google](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001)
 
 ## Project overview
 
