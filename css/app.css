@@ -1,0 +1,246 @@
+/* ----------------- General Style ------------- */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 360px;
+}
+
+body {
+    background: #fff url('../img/Neo-memphis-background-35.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Coda', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background: #fff;
+    padding: 0 30px;
+}
+
+/* ------------------ Styles for the deck of cards ----------------------*/
+
+.deck {
+    width: 650px;
+    min-height: 670px;
+    background: #070707;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 120px;
+    width: 120px;
+    background: #565555;
+    font-size: 0;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #1a82b2;
+    cursor: default;
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #ef17b2;
+    font-size: 33px;
+}
+
+.deck .card.disabled {
+    pointer-events: none;
+}
+
+/* ------------------ Styles for the Score Panel ------------------ */
+
+.score-panel {
+    width: 45%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.score-panel__stars {
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    color: #ef17b2;
+}
+
+.score-panel__stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+#game-restart {
+    cursor: pointer;
+}
+
+/* ------------ Styles for Modal ---------------- */
+
+/* Hidden Modal */
+
+.modal-hide {
+    display: none;
+}
+
+#modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: #323232;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal__content {
+    background-image: url('../img/memphis-colorful.png');  /* Background pattern from Subtle Patterns */
+    margin: 10% auto;
+    padding: 5%;
+    border: 1px solid #888;
+    width: 80%;
+    height: 60%;
+    text-align: center;
+}
+
+.modal__close {
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+    cursor: pointer;
+}
+
+.modal__result-container h3 {
+    margin: 30px 0 10px 0;
+}
+
+.modal__result-container {
+    text-align: center;
+}
+
+#replay-game {
+    margin-top: 30px;
+    color: #fff;
+    background-color: #ef17b2;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer; 
+    border-radius: 8px;
+}
+
+/*  -------------------- Media queries ----------------------  */
+
+/* --- mobile - ie Galaxy S5 or iPhone X --- */
+@media screen and (max-width: 375px) {
+    header h1 {
+        font-size: 24px;
+    }
+    
+    .score-panel {
+        font-size: 0.75em;
+        width: 70%;
+        padding: 5px;
+    }
+
+    .deck {
+        width: 320px;
+        min-height: 350px;
+        padding: 10px;
+    }
+
+    .deck .card {
+        height: 70px;
+        width: 70px;
+    }
+    
+    .fa {
+        font-size: 0.75em;
+    }
+}
+
+/* --- larger mobile - ie Pixel 2 --- */
+@media screen and (min-width: 376px) and (max-width: 420px) {
+    header h1 {
+        font-size: 24px;
+    }
+    
+    .score-panel {
+        width: 70%;
+        padding: 5px;
+    }
+    
+    .deck {
+        width: 380px;
+        min-height: 400px;
+        padding: 10px;
+    }
+
+    .deck .card {
+        height: 80px;
+        width: 80px;
+    }
+    
+    .fa {
+        font-size: 0.85em;
+    }
+}
+
+/* --- tablet --- */
+@media screen and (min-width: 421px) and (max-width: 760px) {
+    .score-panel {
+       min-width: 80%;
+    }
+    
+    .deck {
+        width: 500px;
+        min-height: 520px;
+        padding: 15px;
+    }
+
+    .deck .card {
+        height: 100px;
+        width: 100px;
+    }
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Memory Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Memory Game</h1>
+        </header>
+
+        <div class="score-panel">
+            <ul class="score-panel__stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+
+        	<div class="score-panel__moves">
+                Moves: <span id="moves">0</span>
+            </div>
+
+            <div class="score-panel__timer">
+                Timer: <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+
+            <div id="game-restart">
+        		<i class="fa fa-repeat fa-lg"></i>
+        	</div>
+        </div>
+
+        <!--  the cards will be added dinamically -->
+        <ul class="deck">
+        </ul>
+    </div>
+
+    <div id="modal" class="modal-hide">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <h2>Congratulations, you matched all cards!</h2>
+            <div class="modal__result-container">
+                <h3>Your results:</h3>
+                <div id="modal__end-moves">
+                    Moves: <span id="end-game-moves"></span>
+                </div>
+                <div id="modal__end-time">
+                    Time: <span id="end-game-mins"></span>:<span id="end-game-secs"></span>
+                </div>
+                <div id="modal__end-stars">
+                    Rating: <ul id="end-game-stars" class="score-panel__stars"></ul>
+                </div>
+            </div>
+            <button id="replay-game">Play again</button>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
